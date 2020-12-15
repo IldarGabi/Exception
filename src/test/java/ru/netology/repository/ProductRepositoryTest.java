@@ -23,8 +23,8 @@ class ProductRepositoryTest {
 
     @Test
     void removeById() {
-        repository.removeById(4);
-        Product[] expected = new Product[]{book1, book2, book3};
+        repository.removeById(1);
+        Product[] expected = new Product[]{book2, book3};
         Product[] actual = repository.findAll();
         assertArrayEquals(actual, expected);
     }
